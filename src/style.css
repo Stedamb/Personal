@@ -1,0 +1,136 @@
+/* TUTTO */
+.container-fluid { 
+    background-image: url(../res/background_darker.jpg);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.row { 
+    color: white;
+}
+
+/* LOGO */
+.logo { 
+    max-width: 400px;
+    margin: auto;
+}
+
+body {
+    perspective: 400px;
+    perspective-origin: 15rem 5rem;
+}
+
+.cube {
+    width: 10rem;
+    height: 10rem;
+    margin: 5rem;
+
+    transform-style: preserve-3d;
+    
+    animation-name: cuberotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes cuberotate {
+    0% {transform: rotateY(0deg) rotateX(0deg);}
+    100% {transform: rotateY(360deg) rotateX(360deg); }
+}
+
+.side {
+    width: 10rem;
+    height: 10rem;
+    /* background-image:url(../res/background.jpg); */
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    border: 2px solid white;
+    
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1.6rem;
+}
+
+.one {
+    transform: translateZ(-5rem) rotateY(360deg);
+}
+
+.two {
+    transform: translateY(-15rem) rotateX(90deg);
+}
+
+.three {
+    transform: translateY(-20rem) translateX(5rem) rotateY(90deg);
+}
+
+.four {
+    transform: translateY(-30rem) translateX(-5rem) rotateY(-90deg);
+}
+
+.five {
+    transform: translateY(-35rem) rotateX(-90deg);
+}
+
+.six {
+    transform: translateY(-50rem) translateZ(5rem);
+}
+/* 
+body{
+    perspective-origin:50% -100%;
+    perspective: 1500px;
+    overflow:hidden;
+    background:rgb(19, 36, 129);
+  }
+  .cube {
+    position:relative;
+    padding-bottom:20%;
+    transform-style: preserve-3d;
+    transform-origin: 50% 100%;
+    transform:rotateY(45deg) rotateX(0);
+    transition:transform 10s;
+  }
+  .cubeFace {
+    position: absolute;
+    left:40%;top:0;
+    width: 20%;height:100%;
+    margin: 0 auto;
+    transform-style: inherit;
+    background: white;
+    box-shadow:inset 0 0 0 5px #333; 
+    transform-origin:50% 50%;
+    transform: rotateX(90deg);
+    backface-visibility:hidden;
+  }
+  .face2{
+    transform-origin:50% 50%;
+    transform: rotatez(90deg) translateX(100%) rotateY(90deg);
+  }
+  .cubeFace:before, .cubeFace:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin:0 0;
+    background: inherit;
+    box-shadow:inherit;
+    backface-visibility:inherit;
+  }
+  .cubeFace:before {
+    top: 100%; left: 0;
+    transform: rotateX(-90deg);
+  }
+  .cubeFace:after {
+    top: 0; left: 100%;
+    transform: rotateY(90deg);
+  }
+  
+  body:hover .cube{
+    transform:rotateY(405deg) rotateX(360deg);
+  } */
+
+/* DESCRIZIONE */
+.description {
+    padding: 20px;
+}
+
