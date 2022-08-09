@@ -3,7 +3,7 @@
 
 /* TUTTO */
 .container-fluid { 
-    background-image: url(../res/background_darker.jpg);
+    background-image: url(./res/background_darker.jpg);
     font-family: 'Major Mono Display', monospace;
     color: white;
 
