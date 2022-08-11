@@ -90,11 +90,8 @@ body {
     font-size: 36pt;
 }
 
-/* DESCRIZIONE */
-.description {
-    text-align: center;
-    margin: auto;
-    padding: 20px;
+/* SOTTOTITOLO */
+.subtitle {
     font-size: 20pt;
 }
 
@@ -113,6 +110,13 @@ body {
     0 0 2px 2px #fff,  /* inner white */
     0 0 3px 3px #f0f, /* middle magenta */
     0 0 4px 4px #0ff; /* outer cyan */
+}
+
+.description {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    font-size: 20pt;
 }
 
 #me {

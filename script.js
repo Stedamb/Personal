@@ -1,7 +1,20 @@
+var myBox = document.getElementById('me');
 var workBox = document.getElementById('work');
 var socialBox = document.getElementById('social');
 var artBox = document.getElementById('other');
 
+myBox.onclick = function() {
+    myBox.innerHTML = '';
+    myBox.style.backgroundImage = "url('./res/loading.gif')";
+    myBox.style.backgroundSize = "500px";
+    myBox.style.backgroundBlendMode = "normal";
+    setTimeout(() => {  
+        location.href = "http://github.com/Stedamb"; 
+        myBox.style.backgroundImage = "url('./res/pfp.webp')";
+        myBox.style.backgroundSize = "auto 400px";
+        myBox.style.backgroundBlendMode = "darken";
+    }, 2000);
+}
 
 workBox.onclick = function() {
     workBox.innerHTML = '';
