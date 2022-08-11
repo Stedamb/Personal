@@ -13,6 +13,7 @@ myBox.onclick = function() {
         myBox.style.backgroundImage = "url('./res/pfp.webp')";
         myBox.style.backgroundSize = "auto 400px";
         myBox.style.backgroundBlendMode = "darken";
+        myBox.innerHTML = '<p class="description">Vive ut ViVAs ViVi</br>- Who Am i -</p>';
     }, 2000);
 }
 
@@ -26,6 +27,7 @@ workBox.onclick = function() {
         workBox.style.backgroundImage = "url('./res/coding.gif')";
         workBox.style.backgroundSize = "auto 400px";
         workBox.style.backgroundBlendMode = "darken";
+        workBox.innerHTML = '<p class="description">eX Nihilo Nihil fit</br>- Work -</p>';
     }, 1000);
 }
 
@@ -39,6 +41,7 @@ socialBox.onclick = function() {
         socialBox.style.backgroundImage = "url('./res/giphy.gif')";
         socialBox.style.backgroundSize = "auto 400px";
         socialBox.style.backgroundBlendMode = "darken";
+        socialBox.innerHTML = '<p class="description text-center">VulgAre Amici nomen sed rara est fides</br>- sociAl -</p>';
     }, 1000);
 
 }
@@ -53,5 +56,6 @@ artBox.onclick = function() {
         artBox.style.backgroundImage = "url('./res/pinterest.jpg')";
         artBox.style.backgroundSize = "auto 400px";
         artBox.style.backgroundBlendMode = "normal";
+        artBox.innerHTML = '<p class="description">Artes serViunt VitAe sApentiA imperAt</br>- Art -</p>';
     }, 1000);
 }
