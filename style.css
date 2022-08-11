@@ -93,6 +93,7 @@ body {
 
 /* DESCRIZIONE */
 .description {
+    width: 100%;
     padding: 20px;
 }
 
