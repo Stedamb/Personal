@@ -41,7 +41,6 @@ body {
 .side {
     width: 10rem;
     height: 10rem;
-    /* background-image:url(../res/background.jpg); */
     background-size: cover;
     background-position: center;
     opacity: 1;
@@ -96,13 +95,12 @@ body {
     text-align: center;
     margin: auto;
     padding: 20px;
+    font-size: 20pt;
 }
 
 /* CONTENUTO */
 .box { 
     height: 400px;
-    background: rgba(0, 0, 0, .65) url('./res/pfp.webp');
-    background-position: center;
     background-blend-mode: darken;
     border: 1px gray solid;
     box-shadow: 24px 24px 24px 0 rgb(0, 0, 0);
@@ -117,21 +115,22 @@ body {
     0 0 4px 4px #0ff; /* outer cyan */
 }
 
+#me {
+    background: rgba(0, 0, 0, .65) url('./res/pfp.webp');
+    background-position: center;
+}
+
 #work { 
     background: rgba(0, 0, 0, 0.3) url('./res/coding.gif');
     background-position: center;
-
-
 }
 
 #social { 
     background: rgba(0, 0, 0, .65) url('./res/giphy.gif');
     background-position: center;
-
 }
 
 #other { 
     background: rgba(0, 0, 0, .65) url('./res/butterfly.webp');
     background-position: center;
-
 }
